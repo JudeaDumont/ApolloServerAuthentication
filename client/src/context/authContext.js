@@ -1,4 +1,4 @@
-import { jwtDecode } from 'jwt-decode';
+import {jwtDecode} from 'jwt-decode';
 import {createContext, useReducer} from "react";
 
 const initialState = {
@@ -19,7 +19,7 @@ const AuthContext = createContext({
     },
     logout: () => {
     }
-})
+});
 
 function authReducer(state, action) {
     switch (action.type) {

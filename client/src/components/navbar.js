@@ -9,6 +9,10 @@ function NavBar(){
                     <Typography variant="h5" component="div">
                         <Link to="/" style={{textDecoration:'none', color:'white'}}>ReactLogin</Link>
                     </Typography>
+                    <Box alignItems="right" sx={{flexGrow:1, textAlign:"right"}}>
+                        <Link to="/login" style={{textDecoration:'none', color:'white', marginRight:"10px"}}>Login</Link>
+                        <Link to="/register" style={{textDecoration:'none', color:'white'}}>Register</Link>
+                    </Box>
                 </Toolbar>
             </AppBar>
         </Box>

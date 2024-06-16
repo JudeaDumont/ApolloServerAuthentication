@@ -1,1 +1,17 @@
 npm install @mui/material @emotion/react @emotion/styled
+
+the guy did not includ confirmPassword in the
+
+input RegisterInput {
+    username: String,
+    email: String,
+    password: String
+}
+
+in typedefs. And to make sure it actually gets into type defs, you have to close the client project
+
+then close the wrapping project
+
+then rerun the wrapping project, and then rerun the client project.
+
+this tutorial sucks.
