@@ -7,6 +7,8 @@ import client from "./apolloClient";
 import {ApolloProvider} from "@apollo/react-hooks";
 import {BrowserRouter} from "react-router-dom";
 import {AuthProvider} from "./context/authContext";
+import {DevSupport} from "@react-buddy/ide-toolbox";
+import {ComponentPreviews, useInitial} from "./dev";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,7 +17,11 @@ root.render(
         <ApolloProvider client={client}>
             <BrowserRouter>
                 <React.StrictMode>
-                    <App/>
+                    <DevSupport ComponentPreviews={ComponentPreviews}
+                                useInitialHook={useInitial}
+                    >
+                        <App/>
+                    </DevSupport>
                 </React.StrictMode>
             </BrowserRouter>
         </ApolloProvider>
